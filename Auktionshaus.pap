@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="7A1B7E66A5A8F8D9">
+  <PROJECT FORMAT="1.00" NAME="Ebay_Gebühren" AUTHOR="fissl" CREATED="2012.10.19 16:38:46" MODIFIED="2016.10.06 12:58:15">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Ebay_Verkäufergebühren" CREATED="2012.10.19 16:07:11" MODIFIED="2016.10.06 12:58:15">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="19">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ebay_Verkäufergebühren]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[double StartPreis, VerkaufsPreis, Provision, GesamtGebühr;]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Eingabe von StartPreis, VerkaufsPreis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[double AngebotsGebühr = 0;]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="57">
+                <TEXT><![CDATA[if StartPreis > 250?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="66">
+                <TEXT><![CDATA[if StartPreis > 100?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="81">
+                <TEXT><![CDATA[if StartPreis > 25?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="89">
+                <TEXT><![CDATA[if StartPreis > 10?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="96">
+                <TEXT><![CDATA[if StartPreis > 2?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="103">
+                <TEXT><![CDATA[if StartPreis > 1?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="111">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="129">
+                <TEXT><![CDATA[if Starpreis > 1?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="142">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="14">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="116">
+                <TEXT><![CDATA[if Verkaufspreis > 500?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="15">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="122">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="16">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="125">
+                <TEXT><![CDATA[Gesamtgebühr = Angebotsgebühr + Provision]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="17">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="127">
+                <TEXT><![CDATA[Ausgabe von Gesamtgebühr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="18">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="62">
+                <TEXT><![CDATA[Angebotsgebühr = 4,80]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="76">
+                <TEXT><![CDATA[Angebotsgebühr = 3,2]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="84">
+                <TEXT><![CDATA[Angebotsgebühr = 1,6]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="91">
+                <TEXT><![CDATA[Angebotsgebühr = 0,8]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="98">
+                <TEXT><![CDATA[Angebotsgebühr = 0,45]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="106">
+                <TEXT><![CDATA[Angebotsgebühr = 0,25]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="114">
+                <TEXT><![CDATA[Provision = Verkaufspreis * 0,09]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="140">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="14">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="118">
+                <TEXT><![CDATA[Provision = 45]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="15">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="120">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="72">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="74">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="79">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="87">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="94">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="101">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="109">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="18" FROM="6" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="58" FROM="10" TO="57" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="61" FROM="57" TO="66" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="77" FROM="66" TO="76" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="64" FROM="57" TO="62" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="67" FROM="66" TO="81" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="73" FROM="62" TO="72" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="75" FROM="72" TO="74" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="78" FROM="76" TO="74" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="80" FROM="74" TO="79" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="82" FROM="81" TO="89" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="85" FROM="81" TO="84" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="86" FROM="84" TO="79" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="88" FROM="79" TO="87" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="90" FROM="89" TO="96" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="92" FROM="89" TO="91" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="93" FROM="91" TO="87" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="95" FROM="87" TO="94" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="97" FROM="96" TO="103" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="99" FROM="96" TO="98" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="100" FROM="98" TO="94" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="102" FROM="94" TO="101" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="112" FROM="111" TO="129" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="107" FROM="103" TO="106" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="108" FROM="106" TO="101" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="110" FROM="101" TO="109" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="104" FROM="103" TO="111" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="113" FROM="109" TO="111" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="131" FROM="129" TO="114" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="123" FROM="122" TO="125" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="119" FROM="116" TO="118" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="121" FROM="118" TO="120" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="117" FROM="116" TO="122" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="124" FROM="120" TO="122" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="126" FROM="125" TO="127" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="128" FROM="127" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="143" FROM="142" TO="116" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="141" FROM="114" TO="140" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="130" FROM="129" TO="142" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="144" FROM="140" TO="142" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
